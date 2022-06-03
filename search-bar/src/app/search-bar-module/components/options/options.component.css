@@ -1,0 +1,23 @@
+.option
+{
+    font-size: 20px;
+    padding: 10px 30px;
+    color: #333333;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.option:hover
+{
+    background-color: #e2e3ee;
+    cursor: pointer;
+}
+.option:last-child
+{
+    border-radius: 0 0 50px 50px;
+    padding-bottom: 20px;
+}
+.option fa-icon
+{
+    color: #444444;
+    margin-right: 5px;
+    font-size: 16px;
+}

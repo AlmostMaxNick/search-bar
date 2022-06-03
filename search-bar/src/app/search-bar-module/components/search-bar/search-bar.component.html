@@ -1,0 +1,8 @@
+<div class="container">
+    <div class="search-bar-container">
+        <input type="text" placeholder="Search a phrase" #input (keyup)="updateOptions(input)" spellcheck="false">
+        <a href="https://www.google.com/search?q={{input.value}}" target="_blank"><button><fa-icon [icon]="faSearch"></fa-icon></button></a>
+    </div>
+    <app-options [options]="options" *ngIf="input.value" (eventTask)="recieveInput($event, input)" (click)="clicked = true" [style.display]="clicked ? 'none' : 'block'"></app-options>
+</div>
+

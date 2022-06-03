@@ -1,0 +1,4 @@
+<div class="option" *ngFor="let option of options" (click)="sendInput(option.phrase)">
+    <fa-icon [icon]="faSearch"></fa-icon>
+    {{option.phrase}}
+</div>
